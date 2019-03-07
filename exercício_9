@@ -2,18 +2,18 @@
 
 <?php
 
-Print “Quantos metros quadrados é a casa?”;
+Print "Quantos metros quadrados é a casa?";
 
 $tamanho_metros= (int) fgets (STDIN);
 $quantidade_litros=$tamanho_metros/6;
-$quantidade_latas=$quantidade_litros/18;
-$quantidade_galoes=$quantidade_litros/3,6;
+$quantidade_latas= ceil ($quantidade_litros/18);
+$quantidade_galoes= ceil ($quantidade_litros/3.6);
 $preco_lata=$quantidade_latas*80;
 $preco_galao=$quantidade_galoes*25;
 
-Print “A quantidade de latas de 18 litros a serem compradas são $quantidade_latas e o preço é de $preco_lata”;
+Print "A quantidade de latas de 18 litros a serem compradas são $quantidade_latas e o preço é de $preco_lata";
 
-Print “A quantidade de galões de 3,6 litros a serem compradas são $quantidade_ galoes e o preço é de $preco_ galao”;
+Print "A quantidade de galões de 3,6 litros a serem compradas são $quantidade_galoes e o preço é de $preco_galao";
 
 $porcentagem=($tamanho_metros*10)/100;
 $tamanho_final=$tamanho_metros+$porcentagem;
