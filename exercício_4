@@ -1,18 +1,18 @@
 4.	Solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar. 
 
-<?php
+<<?php
 
-Print “Digite o valor da mercadoria:”;
+Print "Digite o valor da mercadoria:";
 
 $valor_mercadoria=  (float)  fgets (STDIN);
 
-Print “Digite a porcentagem de desconto:”;
+Print "Digite a porcentagem de desconto:";
 
 $valor_desconto_porcentagem= (int) fgets (STDIN);
 $valor_desconto_dinheiro=($valor_mercadoria*$valor_desconto_porcentagem)/100;
 
-Print “Esse é o total de desconto $valor_desconto_dinheiro”;
+Print "Esse é o total de desconto $valor_desconto_dinheiro";
 
 $valor_final= $valor_mercadoria-$valor_desconto_dinheiro;
 
-Print “Esse é o valor final do produto $valor_final”;
+Print " esse é o valor final do produto $valor_final";
