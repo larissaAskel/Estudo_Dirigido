@@ -1,0 +1,10 @@
+6.	Converta uma temperatura digitada em Celsius para Fahrenheit. F = 9*C/5 + 32 .  
+
+<?php
+
+Print “Digite um valor em Celsius:”;
+
+$valor_Celsius= (int) fgets (STDIN);
+$conversao_fahrenheit=($valor_Celsius*1,8)+32;
+
+Print “O valor final de Celsius para fahrenheit é de $conversao_fahrenheit”;
