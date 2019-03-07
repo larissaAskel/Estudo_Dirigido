@@ -1,0 +1,26 @@
+2.	Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calcule o total em segundos. 
+
+<?php
+
+Print “digite uma quantidade de dias:”;
+
+$valor_dias= (int) fgets (STDIN);
+$conversao_para_horas =$valor_dias*24;
+$conversao_dias_segundos= ($conversão_para_horas*60)*60;
+
+Print “Digite uma quantidade de horas:”;
+
+$valor_horas= (int) fgets (STDIN);
+$conversao_horas_segundos= ($valor_horas*60)*60;
+
+Print “Digite uma quantidade de minutos:”;
+
+$valor_minutos= (int) fgets (STDIN);
+$conversao_minutos_segundos= $valor_minuto*60;
+
+Print “Digite o valor em segundos:”;
+
+$valor_segundos= (int) fgets (STDIN);
+$valor_total_segundos= $valor_segundos+$conversao_minutos_segundos+$conversao_horas_segundos+$conversao_dias_segundos;
+
+Print “O valor total em segundos foi de $valor_total_segundos ”;
