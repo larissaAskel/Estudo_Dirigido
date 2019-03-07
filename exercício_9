@@ -1,0 +1,19 @@
+9.	(DESAFIO) ) Faça um Programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00 ou em galões de 3,6 litros, que custam R$ 25,00. Informe ao usuário as quantidades de tinta a serem compradas e os respectivos preços em 3 situações:  a. comprar apenas latas de 18 litros;  b. comprar apenas galões de 3,6 litros;  c. misturar latas e galões, de forma que o preço seja o menor. Acrescente 10% de folga e sempre arredonde os valores para cima, isto é, considere latas cheias.  
+
+<?php
+
+Print “Quantos metros quadrados é a casa?”;
+
+$tamanho_metros= (int) fgets (STDIN);
+$quantidade_litros=$tamanho_metros/6;
+$quantidade_latas=$quantidade_litros/18;
+$quantidade_galoes=$quantidade_litros/3,6;
+$preco_lata=$quantidade_latas*80;
+$preco_galao=$quantidade_galoes*25;
+
+Print “A quantidade de latas de 18 litros a serem compradas são $quantidade_latas e o preço é de $preco_lata”;
+
+Print “A quantidade de galões de 3,6 litros a serem compradas são $quantidade_ galoes e o preço é de $preco_ galao”;
+
+$porcentagem=($tamanho_metros*10)/100;
+$tamanho_final=$tamanho_metros+$porcentagem;
