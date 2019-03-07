@@ -1,0 +1,16 @@
+8.	 Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro, calcule quantos dias de vida um fumante perderá. Exiba o total de dias. 
+
+<?php
+
+Print “Quantos cigarros você fuma por dia?”;
+$quantidade_cigarros= (int) fgets (STDIN);
+
+Print “Há quantos anos você fuma?”;
+$anos_fumados= (int) fgets (STDIN);
+
+$cigarros_fumados=$quantidade_cigarros*365*$anos_fumados;
+$minutos=$cigarros_fumados*10;
+$horas_perdidas=$minutos/60;
+$tempo_perdido_dias= round($horas_perdidas/24);
+
+Print “A quantidade de dias que ele perderá serão $tempo_perdido_dias”;
