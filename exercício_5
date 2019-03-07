@@ -2,13 +2,13 @@
 
 <?php
 
-Print “Digite a distância em metros:”;
+Print "Digite a distância em metros:";
 
 $valor_metro= (float) fgets (STDIN);
 
-Print “Digite a velocidade média em metros/segundos:”;
+Print "Digite a velocidade média em metros/segundos:";
 
 $valor_velocidade_media= (float) fgets (STDIN);
 $valor_tempo=$valor_metro/$valor_velocidade_media;
 
-Print “O tempo percorrido foi de $valor_tempo  segundos”;
+Print "O tempo percorrido foi de $valor_tempo  segundos";
