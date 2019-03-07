@@ -1,0 +1,16 @@
+7.	 Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado. 
+
+<?php
+
+Print “Quantos foram os km percorridos?”;
+
+$valor_km= (int) fgets (STDIN);
+$valor_final_km=$valor_km*0.15;
+
+Print “Quantos foram os dias percorridos?”;
+
+$valor_dia=(int) fgets (STDIN);
+$valor_final_dia=$valor_dia*60;
+$valor_total_final=$valor_final_km+$valor_final_dia;
+
+Print “$valor_total_final esse é o preço final a pagar”;
