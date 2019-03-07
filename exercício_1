@@ -1,0 +1,10 @@
+1.	Escreva um programa que leia um valor em metros e o exiba convertido em milímetros. 
+
+<?php
+
+Print “Digite um valor em metros:”;
+
+$valor_metros= (int) fgets (STDIN);
+$valor_milimetros=$valor_metros/1000;
+
+Print “O resultado de seu número foi de $valor_milimetros milímetros”;
