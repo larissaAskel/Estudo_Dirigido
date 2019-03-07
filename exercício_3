@@ -2,17 +2,17 @@
 
 <?php
 
-Print “Digite o atual valor do determinado salário:”;
+Print "Digite o atual valor do determinado salário:";
 
 $valor_atual_salario= (float) fgets (STDIN);
 
-Print “Digite a porcentagem que deseja aumentar:”;
+Print "Digite a porcentagem que deseja aumentar:";
 
 $valor_porcentagem = (int) fgets (STDIN);
 $valor_procentagem_dinheiro= ($valor_atual_salario*$valor_porcentagem)/100;
 
-Print “O aumento foi de $valor_procentagem_dinheiro ”;
+Print "O aumento foi de $valor_procentagem_dinheiro ";
 
 $salario_total=$valor_atual_salario+$valor_procentagem_dinheiro;
 
-Print “O valor total do salário foi o de $salario_total ”;
+Print "O valor total do salário foi o de $salario_total ";
