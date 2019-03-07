@@ -2,9 +2,9 @@
 
 <?php
 
-Print “Digite um valor em metros:”;
+print "Digite um valor em metros:";
 
 $valor_metros= (int) fgets (STDIN);
-$valor_milimetros=$valor_metros/1000;
+$valor_milimetros=$valor_metros*1000;
 
-Print “O resultado de seu número foi de $valor_milimetros milímetros”;
+print "O resultado de seu número foi de $valor_milimetros milímetros";
